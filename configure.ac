@@ -10,4 +10,19 @@ AC_CONFIG_MACRO_DIR([m4])
 AC_PROG_CC
 AC_PROG_LIBTOOL
 
+AC_CHECK_LIB(nsl, gss_import_name,
+  [],
+  [AC_MSG_ERROR([nsl libraries not found.])]
+)
+
+AC_CHECK_LIB(socket, getnameinfo,
+  [],
+  [AC_MSG_ERROR([socket libraries not found.])]
+)
+
+AC_CHECK_LIB(c, pthread_spin_unlock,
+  [],
+  [AC_MSG_ERROR([c libraries not found.])]
+)
+
 AC_OUTPUT(Makefile src/Makefile)
