@@ -25,4 +25,19 @@ AC_CHECK_LIB(c, pthread_spin_unlock,
   [AC_MSG_ERROR([c libraries not found.])]
 )
 
+AC_CHECK_LIB(mp, mp_madd,
+  [],
+  [AC_MSG_ERROR([mp libraries not found.])]
+)
+
+AC_CHECK_LIB(md, MD5Final,
+  [],
+  [AC_MSG_ERROR([md libraries not found.])]
+)
+
+AC_CHECK_LIB(m, sincosl,
+  [],
+  [AC_MSG_ERROR([m libraries not found.])]
+)
+
 AC_OUTPUT(Makefile src/Makefile)
