@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; indent-tabs-mode: 1; st-rulers: [70] -*-
 # vim: ts=8 sw=8 ft=Makefile noet
 
-RPCSOC_LIBRARY_VERSION=1:0:0
+RPCSOC_LIBRARY_VERSION=1
 
 lib_LTLIBRARIES = librpcsoc.la
 

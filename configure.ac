@@ -2,7 +2,7 @@
 
 AC_PREREQ(2.61)
 
-AC_INIT([librpcsoc], [1.0.0])
+AC_INIT([librpcsoc], [1])
 AM_INIT_AUTOMAKE([foreign subdir-objects])
 AC_CONFIG_SRCDIR([src])
 AC_CONFIG_MACRO_DIR([m4])
