@@ -56,6 +56,10 @@
 
 #define	rpc_buffer(xprt) ((xprt)->xp_p1)
 
+#ifndef MAX
+#define     MAX(a, b)       (((a) > (b))?(a):(b))
+#endif
+
 static struct xp_ops *svcudp_ops();
 
 extern int errno;

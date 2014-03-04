@@ -10,7 +10,7 @@ AC_CONFIG_MACRO_DIR([m4])
 AC_PROG_CC
 AC_PROG_LIBTOOL
 
-AC_CHECK_LIB(nsl, gss_import_name,
+AC_CHECK_LIB(nsl, svc_dg_enablecache,
   [],
   [AC_MSG_ERROR([nsl libraries not found.])]
 )
